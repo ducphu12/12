@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let table = "<table border ='1' width = '1000' cellspacing ='0' cellpadding='5'>";
+
+  for(i=2;i<=9;i++){
+    table = table + "<tr>";
+    //Tạo hàng cho bảng
+    for(j=1;j<=9;j++){
+      let result = i*j;
+      table = table + "<td>" + i + "x" + j + " = " + result +"</td>";
+      //Tạo các phần tử trong một hàng cho bảng
+    }
+    table = table + "</tr>"
+  }
+  table = table + "</table>";
+  document.write(table);
+
+
+</script>
+
+
+</body>
+</html>
